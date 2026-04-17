@@ -2,7 +2,7 @@
 
 ## Current Status
 
-Documentation planning pack created. Project concept, scope, design direction, system architecture, API shape, and demo flow are now documented and aligned.
+Documentation planning pack is complete, frontend scaffolding is in place, Harsh phase 1 settings work exists, and Harsh phase 2 public supplier submission portal is now implemented in the Vite app.
 
 ## Decision Log
 
@@ -26,16 +26,22 @@ Documentation planning pack created. Project concept, scope, design direction, s
 - API contract draft
 - Demo script draft
 - Pitch notes draft
+- Frontend app scaffolding with React Router, Tailwind, Axios, and shared session/http utilities
+- Internal settings experience for organization and facility management
+- `react-hook-form` + Zod validation for the settings workflow
+- Public supplier submission portal route and separate external layout
+- Repeatable supplier metric entry with file attachment support
+- Supplier submission API integration using unauthenticated `FormData`
 
 ## In Progress
 
-- No implementation in progress
-- Ready for repo setup and code scaffolding in next phase
+- Additional frontend and backend feature phases remain in progress across the broader project plan
+- Supplier portal backend validation and downstream processing depend on the API team contract
 
 ## Blockers
 
-- No active blockers for documentation phase
-- Implementation phase will need actual repo and code structure
+- No blocker for the implemented supplier UI itself
+- End-to-end supplier submission depends on the backend `/api/supplier/submit` endpoint honoring the agreed phase 2 payload contract
 
 ## Risks
 
@@ -46,11 +52,11 @@ Documentation planning pack created. Project concept, scope, design direction, s
 
 ## Next Immediate Tasks
 
-- Initialize project repository
-- Create frontend and backend scaffolding
-- Define Prisma schema
-- Prepare seed data
-- Build calculations first
+- Continue remaining phase work outside Harsh scope
+- Connect the supplier portal to the live backend endpoint and validate file handling
+- Build remaining governance, dashboard, and reporting modules
+- Reconcile older API documentation with the newer supplier submission contract
+- Add backend-backed test coverage for supplier submission and issue workflows
 
 ## Demo Readiness Checklist
 
@@ -62,9 +68,9 @@ Documentation planning pack created. Project concept, scope, design direction, s
 - [x] API contract drafted
 - [x] Demo script prepared
 - [x] Pitch notes prepared
-- [ ] Implementation started
+- [x] Implementation started
 - [ ] Seeded demo data created
-- [ ] UI demo built
+- [x] UI demo built
 - [ ] Report output built
 
 ## Timestamped Updates
@@ -73,10 +79,12 @@ Documentation planning pack created. Project concept, scope, design direction, s
 - `2026-04-17 11:40 IST` Product direction narrowed to practical MVP for manufacturing SMEs
 - `2026-04-17 11:55 IST` Documentation-only hackathon planning pack approved
 - `2026-04-17 12:10 IST` Documentation files created for implementation handoff
+- `2026-04-17 21:38 IST` Frontend Vite application scaffold and internal settings module present in the repo
+- `2026-04-18 IST` Harsh phase 2 supplier submission portal implemented with isolated public routing and `FormData` submission flow
 
 ## Notes From Reviews Or Pivots
 
 - Keep the narrative grounded in real operational pain
 - Do not present the solution as full regulatory compliance software
 - Protect time for a polished and simple demo story
-
+- Treat `implementation-pan.md` phase 2 supplier contract as the source of truth over the older single-record supplier example in `api-contract.md`

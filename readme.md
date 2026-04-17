@@ -1,6 +1,6 @@
 # CarbonLens
 
-`CarbonLens` is a documentation-first hackathon project for `SKB_P1: Digital Intelligent Platform for ESG Performance and GHG Monitoring`.
+`CarbonLens` is a hackathon project for `SKB_P1: Digital Intelligent Platform for ESG Performance and GHG Monitoring`, with documentation, active frontend implementation, and a phased product buildout in progress.
 
 It is designed as a simple, practical, and impactful ESG control tower for manufacturing SMEs. The concept focuses on giving companies one trusted place to collect emissions-related data, calculate Scope 1 and Scope 2 emissions, manage limited Scope 3 supplier inputs, track governance issues, and generate trusted sustainability summaries.
 
@@ -31,6 +31,13 @@ CarbonLens addresses this by acting as a single source of truth for ESG and GHG 
 - Governance dashboard with ownership and escalation
 - Summary reporting for leadership and audit readiness
 - Optional AI-smart insights layered on top of deterministic calculations
+
+## Current Build Status
+
+- Internal settings UI is implemented for organization and facility master data
+- Public supplier submission UI is implemented at `/supplier/submit/:tokenHash`
+- Shared frontend session and Axios infrastructure are in place
+- Dashboard, governance, reporting, and backend feature coverage are still in progress
 
 ## Tech Stack
 

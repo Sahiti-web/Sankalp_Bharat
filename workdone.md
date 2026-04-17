@@ -11,12 +11,17 @@ This document tracks the cleaned and current project direction.
 - Created and aligned the main project docs around CarbonLens
 - Cleaned conflicting documentation that had pushed OCR-heavy and oversized MVP scope
 - Updated README, idea, CRD, PRD, architecture, task plan, and pitch notes for one consistent story
+- Set up the frontend application shell with React, Vite, TypeScript, Tailwind, and routing
+- Built the internal settings workflow for organization and facility master data
+- Added form validation patterns with `react-hook-form` and Zod for Harsh phase 1 scope
+- Built the isolated public supplier submission portal for Harsh phase 2 scope
+- Added repeatable metric entry, evidence file attachments, submit states, and unauthenticated supplier API posting
 
 ## Current Status
 
-- Documentation is aligned
+- Documentation is mostly aligned
 - Product direction is stable
-- Ready for implementation planning or scaffolding
+- Frontend implementation has started and Harsh phase 1 and phase 2 UI work are present
 
 ## Removed or Simplified
 
@@ -27,10 +32,10 @@ This document tracks the cleaned and current project direction.
 
 ## Next Recommended Work
 
-1. Finalize the canonical tech stack in docs
-2. Create implementation scaffolding
+1. Reconcile older docs with the current supplier submission endpoint contract
+2. Connect and verify the backend supplier submission endpoint end-to-end
 3. Seed demo data
-4. Build core flows in this order:
+4. Build remaining core flows in this order:
    - auth
    - data entry/upload
    - calculation engine

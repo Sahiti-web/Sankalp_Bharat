@@ -6,6 +6,8 @@
 - Add better validation coverage for activity units and reporting periods
 - Improve report formatting and export options
 - Add richer issue assignment and status flows
+- Add token pre-validation and supplier context loading for the public submission link
+- Add stronger file upload rules, size/type guidance, and evidence previews
 
 ## Product Expansion
 
@@ -13,6 +15,7 @@
 - Add benchmarking by facility or category
 - Support multiple reporting periods and comparisons
 - Introduce targets, alerts, and action plans
+- Add supplier invitation tracking, resend flows, and submission status views for internal users
 
 ## Data And Integration Roadmap
 
@@ -46,4 +49,3 @@
 ## Long-Term Vision
 
 CarbonLens can evolve from a hackathon MVP into a practical sustainability operations platform for organizations that need an affordable, trustworthy, and action-oriented system for ESG performance and GHG monitoring.
-
