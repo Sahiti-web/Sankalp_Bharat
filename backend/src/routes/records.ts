@@ -149,7 +149,7 @@ router.get('/', async (req: Request, res: Response): Promise<void> => {
     res.status(200).json({ records });
   } catch (err) {
     console.error('[RECORDS] List error:', err);
-    res.status(500).json({ statusCode: 500, message: 'Failed to retrieve records' });
+    res.status(500).json({ statusCode: 500, message: 'Failed to retrieve records', error: String(err) });
   }
 });
 

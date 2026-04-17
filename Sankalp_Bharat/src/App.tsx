@@ -10,6 +10,7 @@ import GovernancePage from './pages/GovernancePage';
 import UploadPage from './pages/UploadPage';
 import SuppliersPage from './pages/SuppliersPage';
 import ReportsPage from './pages/ReportsPage';
+import LoginPage from './pages/LoginPage';
 
 /**
  * CarbonLens — ESG Control Tower Frontend
@@ -43,6 +44,7 @@ const App: React.FC = () => {
       <CssBaseline />
       <BrowserRouter>
         <Routes>
+          <Route path="/login" element={<LoginPage />} />
           <Route element={<AppLayout />}>
             <Route path="/" element={<DashboardPage />} />
             <Route path="/records" element={<RecordsPage />} />

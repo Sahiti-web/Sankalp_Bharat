@@ -28,7 +28,7 @@ const PORT = parseInt(process.env.PORT ?? '5000', 10);
 
 // ── Middleware ──────────────────────────────────────────────
 app.use(cors({
-  origin: process.env.CORS_ORIGIN ?? 'http://localhost:3000',
+  origin: true, // Allow dynamic dev origins (e.g. localhost:5174, 5175)
   credentials: true,
 }));
 
